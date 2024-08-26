@@ -5,10 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
-
+  <link href="https://cdn.jsdelivr.net/npm/pagedone@1.2.1/src/css/pagedone.css"/>  <!-- important for slides sweeper thing -->
+  <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"/> <!-- important for slides sweeper thing -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> <!-- important for slides sweeper thing -->
 </head>
 <body>
-            <!-- transition transform hover:scale-150 -->
           <!-- It should be moved to another file named "navbar.html" -->
     <nav class="sticky top-0 z-50" style="background-color: #1B1464;"> 
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -33,7 +34,6 @@
         <img src="https://superpayturizm.com/assets/images/header.jpg" alt="bg" class="w-full h-auto">
         <div class="absolute inset-0 flex flex-col items-center justify-center space-y-4">
             <h1 class="text-white text-1.2xl font" style="letter-spacing: 20px;">BEST TOUR IN</h1>
-            <!-- transition transform -->
             <h2 class="text-white font-semibold hover:scale-150" style="font-size: 190px;">ISTANBUL</h2>
             <button class="hover:bg-gray-600 hover:bg-opacity-50 transition transform hover:scale-150 rounded-full border border-white px-10 py-3 text-white font-semibold flex items-center">
                 <img src="https://superpayturizm.com/assets/svg/call.svg" alt="" class="w-6 h-6 mr-2">
@@ -136,7 +136,107 @@
       </div>
     </div>
 
-    <img src="https://superpayturizm.com/assets/images/statistic.jpg" alt="" class="w-full h-auto" decoding="async" loading="lazy">
+     <!--SWEEPER CODE-->
+
+    <div class="grid grid-cols-2">
+      <div class="relative" style="width: 600px;"> 
+        <div class="swiper default-carousel swiper-container">
+        <div class="swiper-wrapper">
+         <div class="swiper-slide">
+           <div class="rounded-2xl flex justify-center items-center">
+            <img src="https://superpayturizm.com/assets/images/tours/0/0/0.jpg" alt="" class="" decoding="async" loading="lazy">
+           </div>
+         </div>
+         <div class="swiper-slide">
+           <div class="rounded-2xl flex justify-center items-center">
+            <img src="https://superpayturizm.com/assets/images/tours/0/1/0.jpg" alt="" class="" decoding="async" loading="lazy">
+           </div>
+         </div>
+         <div class="swiper-slide">
+           <div class="rounded-2xl flex justify-center items-center">
+            <img src="https://superpayturizm.com/assets/images/tours/0/2/0.jpg" alt="" class="" decoding="async" loading="lazy">
+           </div>
+         </div>
+         <div class="swiper-slide">
+          <div class="rounded-2xl flex justify-center items-center">
+           <img src="https://superpayturizm.com/assets/images/tours/0/3/0.jpg" alt="" class="" decoding="async" loading="lazy">
+          </div>
+        </div>
+        </div>
+        <div class="flex items-center gap-8 lg:justify-start justify-center">
+         <button id="slider-button-left" class="swiper-button-prev ml-4 " style="width: 50px; height: 50px;" data-carousel-prev>
+           <svg class="h-5 w-5 text-indigo-600 group-hover:text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+             <path d="M10.0002 11.9999L6 7.99971L10.0025 3.99719" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+           </svg>
+         </button>
+         <button id="slider-button-right" class="swiper-button-next mr-4" style="width: 50px; height: 50px;" data-carousel-next>
+           <svg class="text-indigo-600 group-hover:text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+             <path d="M5.99984 4.00012L10 8.00029L5.99748 12.0028" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+           </svg>
+         </button>
+        </div>
+        <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <div>
+        <div class="space-y-8">
+          <!-- Timeline Item 1 -->
+          <div class="flex">
+            <div class="flex flex-col items-center">
+              <div class="w-7 h-8 rounded-full border-2 border-blue-500 flex items-center justify-center text-blue-500 bg-transparent">1</div>
+              <div class="h-full border-l-2 border-dotted border-gray-300"></div>
+            </div>
+            <div class="ml-4">
+              <h4 class="text-lg font-bold">park of Istanbul Zoo</h4>
+              <p class="text-gray-600">Including horse riding, zip-line, visiting animals, Gift shop, etc.</p>
+              <p class="text-red-500 font-bold">Visiting Hour: 10:00 to 14:30</p>
+            </div>
+          </div>
+        
+          <!-- Timeline Item 2 -->
+          <div class="flex">
+            <div class="flex flex-col items-center">
+              <div class="w-7 h-8 rounded-full border-2 border-blue-500 flex items-center justify-center text-blue-500">2</div>
+              <div class="h-full border-l-2 border-dotted border-gray-300"></div>
+            </div>
+            <div class="ml-4">
+              <h4 class="text-lg font-bold">Forum Istanbul shopping and lunch</h4>
+              <p class="text-gray-600">You can visit amazing shops at this place or choose to have your lunch at any restaurant there.</p>
+              <p class="text-red-500 font-bold">Visiting Hour: 15:00 to 17:00</p>
+            </div>
+          </div>
+        
+          <!-- Timeline Item 3 -->
+          <div class="flex">
+            <div class="flex flex-col items-center">
+              <div class="w-7 h-8 rounded-full border-2 border-blue-500 flex items-center justify-center text-blue-500">3</div>
+              <div class="h-full border-l-2 border-dotted border-gray-300"></div>
+            </div>
+            <div class="ml-4">
+              <h4 class="text-lg font-bold">Legoland Istanbul</h4>
+              <p class="text-gray-600">Including 4D cinema, café, different Lego games, and gift shops.</p>
+              <p class="text-red-500 font-bold">Visiting Hour: 17:30 to 20:00</p>
+            </div>
+          </div>
+        
+          <!-- Timeline Item 4 -->
+          <div class="flex">
+            <div class="flex flex-col items-center">
+              <div class="w-8 h-8 rounded-full border-2 border-red-500 flex items-center justify-center text-white bg-red-500">4</div>
+            </div>
+            <div class="ml-4">
+              <h4 class="text-lg font-bold">Sea Life Istanbul aquarium</h4>
+              <p class="text-gray-600">Including several different fish-visiting tours and gift shops.</p>
+              <p class="text-red-500 font-bold">Visiting Hour: 17:30 to 20:00</p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+      
+    <img src="https://superpayturizm.com/assets/images/statistic.jpg" alt="" class="w-full h-auto mt-20" decoding="async" loading="lazy">
 
     <div class="flex gap-20 px-20 mt-16">
       <div class="bg-transparent flex-auto hover:bg-custom-blue" style="width: 100px; height: 200px;">
@@ -240,6 +340,35 @@
 
 
 
+  <!-- for the swiper to work -->
+  <script>
+    const swiper = new Swiper('.swiper-container', {
+        loop: true, // Enable looping
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        autoplay: {
+            delay: 5000, // Delay between slides
+            disableOnInteraction: false, // Continue autoplay after interaction
+        },
+    });
+</script>
+
+  <!-- to not see the unwanted arrows -->
+
+<style>
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    display: none;
+  }
+  </style>
   
+
+  <script src="https://cdn.jsdelivr.net/npm/pagedone@1.2.1/src/js/pagedone.js"></script> <!-- important for slides sweeper thing -->
 </body>
 </html>

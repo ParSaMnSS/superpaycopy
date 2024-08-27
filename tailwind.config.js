@@ -6,7 +6,7 @@ module.exports = {
       transform: ['group-hover'],
     },
   },
-  content: ["./templates/*.{html,js}"],
+  content: [".venv/templates/*.{html,js}"],
   theme: {
     extend: {
       colors: {
